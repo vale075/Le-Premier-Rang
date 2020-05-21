@@ -1,0 +1,26 @@
+@font-face { font-family: Chalk; src: url('fonts/DJB Chalk It Up.ttf'); }
+@font-face { font-family: Marker; src: url('fonts/Marker SD Italic.ttf'); }
+
+body {
+	margin: 0;
+}
+
+.corps-background {
+	background-image: url('Background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.corps {
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.activites-background {
+	background: rgba(255,255,255,0.75);
+}
+
+.activites {
+	margin: 1%;
+	font-family: Marker;
+}
