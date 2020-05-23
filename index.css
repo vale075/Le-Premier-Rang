@@ -1,5 +1,18 @@
-@font-face { font-family: Chalk; src: url('fonts/DJB Chalk It Up.ttf'); }
-@font-face { font-family: Marker; src: url('fonts/Marker SD Italic.ttf'); }
+@font-face {
+	font-family: Chalk;
+	src: url('fonts/DJB Chalk It Up.ttf');
+}
+
+@font-face {
+	font-family: Marker;
+	src: url('fonts/Marker SD.ttf');
+}
+
+@font-face {
+	font-family: Marker;
+	src: url('fonts/Marker SD Italic.ttf');
+	font-face: italic;
+}
 
 body {
 	margin: 0;
