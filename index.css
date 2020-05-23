@@ -20,10 +20,10 @@ body {
 
 .header{
 	margin: 0px;
-	background-color: rgb(29, 29, 29);
+	background-color: #292929;
+	background-size: 100% 7cm;
 	width: 100%;
 	height: 7cm; 
-	margin-bottom: 1cm;
 }
 
 .titre{
@@ -54,4 +54,67 @@ body {
 
 h4 {
 	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Caractéristiques du boutton "Activités" (=.dropdown .dropbtn) */
+.dropdown .dropbtn {
+  font-size: 40px; /*taille du texte*/ 
+  border: none; /*pemret d'enlever les bordures*/
+  outline: none; /*permet d'enlever les contours au bouton.*/
+  color: white; /*=couleur du texte en blanc*/
+  padding: 14px 16px; /*taille du boutton*/
+  background-color: inherit; /*arrière plan hérite de l'arrière plan du header*/
+  font-family: DJB Chalk It Up; /*police du texte en DJB Chalk It Up.ttf*/
+  src: url("fonts/DJB Chalk It Up.ttf"); /*source de la police utilisée*/
+  margin: 0; /* Indispensable pour qsue se soit aligner sur téléphone */
+}
+
+.dropdown .dropbtn a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Ajoute un arrière plan blanc (avec une opacité de 0.2) lorsque le curseur passe devant Activité (=dropdown .dropbtn)*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+  /*background-color: rgba(255,255,255,0.2);*/
+}
+
+/*  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #292929;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Caractéristiques des sous menus (=dropdown-content) */
+.dropdown-content a {
+  float: none; /**/
+  color: white; /*=couleur du texte en blanc*/
+  font-family: DJB Chalk It Up; /*police du texte en DJB Chalk It Up.ttf*/
+  src: url("fonts/DJB Chalk It Up.ttf"); /*source de la police utilisée*/
+  padding: 12px 16px; /*taille de de chaque sous menu*/
+  text-decoration: none; /*permet d'enlever le surlignage en dessous des sous menus*/
+  display: block; /*permet de definir des blocs l'un en dessous des autres pour chaque sous menus */
+  text-align: left; /*permet d'aligner le texte des sous menus à gauche*/
+}
+
+/* Ajoute un arrière plan blanc (avec une opacité de 0.2) lorsque le curseur passe devant les sous menus (=dropdown-content) */
+.dropdown-content a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
