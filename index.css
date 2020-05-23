@@ -31,7 +31,7 @@ body {
 }
 
 .corps-background {
-	background-image: url('Background.jpg');
+	background-image: url('img/Background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
