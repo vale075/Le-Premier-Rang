@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
 	font-family: Chalk;
 	src: url('fonts/DJB Chalk It Up.ttf');
@@ -8,28 +13,29 @@
 	src: url('fonts/Marker SD.ttf');
 }
 
-@font-face {
-	font-family: Marker;
-	src: url('fonts/Marker SD Italic.ttf');
-	font-face: italic;
-}
-
 body {
 	margin: 0;
 }
 
 mark{
-	/*background-color: rgba(41, 41, 41, 0.7);*/
-	background-color: rgba(255,255,255,0.7);
-
+	background-color: rgba(0, 0, 0, 0);
+	color: yellow;
+	font-weight: bold;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.gras{
-	font-style: bold;
+h3 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+h4 {
+	margin-top: 10px;
+	font-size: 38px;
+	font-weight: bold;
 }
 
 .header{
@@ -37,7 +43,8 @@ html {
 	background-color: #292929;
 	background-size: 100% 7cm;
 	width: 100%;
-	height: 7cm; 
+	height: 7cm;
+	text-align: center;
 }
 
 .titre{
@@ -56,24 +63,45 @@ html {
 	margin-left: 15%;
 }
 
+.accueil-background {
+	background: rgba(48,99,61,0.75);
+}
+
+.accueil {
+	margin-left: 1%;
+	margin-right: 1%;
+	font-family: Chalk;
+	color: white;
+	font-size: 30px;
+}
+
 .activites-background {
-	background: rgba(255,255,255,0.75);
+	background: rgba(181,188,183,0.75);
 }
 
 .activites {
-	margin: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
 	font-family: Marker;
-	font-size: 25px;
+	font-size: 32px;
+	color: rgb(8, 10, 100);
+}
+
+.membres-background {
+	background: rgba(255,255,255,0.75);
 }
 
 .membres {
-	margin: 1%;
-	font-family: Arial;
-	font-size: 25px;
+	margin-left: 1%;
+	margin-right: 1%;
+	font-family: Times New Roman;
+	font-size: 35px;
 }
 
-h4 {
-	font-size: 30px;
+.membres {
+	margin: 0%;
+	font-family: Times New Roman;
+	font-size: 25px;
 }
 
 .footer{
@@ -81,33 +109,37 @@ h4 {
 	background-color: #292929;
 	background-size: 100% 7cm;
 	width: 100%;
-	height: 8.5cm; 
+	height: 7.25cm; 
 }
 
+.vale075 {
+	background: rgba(235, 235, 235, 0.75)
+}
 
+.PieroLB {
+	background: rgba(235, 235, 235, 0.75)
+}
 
-
-
-
+.LGdu92 {
+	background: rgba(235, 235, 235, 0.75)
+}
 
 
 
 
 /* Caractéristiques du boutton "Activités" (=.dropdown .dropbtn) */
 .dropdown .dropbtn {
-  font-size: 40px; /*taille du texte*/ 
-  border: none; /*pemret d'enlever les bordures*/
-  outline: none; /*permet d'enlever les contours au bouton.*/
-  color: white; /*=couleur du texte en blanc*/
-  padding: 14px 16px; /*taille du boutton*/
-  background-color: inherit; /*arrière plan hérite de l'arrière plan du header*/
-  font-family: DJB Chalk It Up; /*police du texte en DJB Chalk It Up.ttf*/
-  src: url("fonts/DJB Chalk It Up.ttf"); /*source de la police utilisée*/
-  margin: 0; /* Indispensable pour qsue se soit aligner sur téléphone */
+	font-size: 40px; /*taille du texte*/ 
+	border: none; /*pemret d'enlever les bordures*/
+	outline: none; /*permet d'enlever les contours au bouton.*/
+	color: white; /*=couleur du texte en blanc*/
+	padding: 14px 16px; /*taille du boutton*/
+	background-color: inherit; /*arrière plan hérite de l'arrière plan du header*/
+	margin: 0; /* Indispensable pour qsue se soit aligner sur téléphone */
 }
 
 .dropdown .dropbtn a:hover {
-  background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.2);
 }
 
 /* Ajoute un arrière plan blanc (avec une opacité de 0.2) lorsque le curseur passe devant Activité (=dropdown .dropbtn)*/
@@ -117,32 +149,30 @@ h4 {
 
 /*  */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #292929;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #292929;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
 /* Caractéristiques des sous menus (=dropdown-content) */
 .dropdown-content a {
-  float: none; /**/
-  color: white; /*=couleur du texte en blanc*/
-  font-family: DJB Chalk It Up; /*police du texte en DJB Chalk It Up.ttf*/
-  src: url("fonts/DJB Chalk It Up.ttf"); /*source de la police utilisée*/
-  padding: 12px 16px; /*taille de de chaque sous menu*/
-  text-decoration: none; /*permet d'enlever le surlignage en dessous des sous menus*/
-  display: block; /*permet de definir des blocs l'un en dessous des autres pour chaque sous menus */
-  text-align: left; /*permet d'aligner le texte des sous menus à gauche*/
+	float: none; /**/
+	color: white; /*=couleur du texte en blanc*/
+	padding: 12px 16px; /*taille de de chaque sous menu*/
+	text-decoration: none; /*permet d'enlever le surlignage en dessous des sous menus*/
+	display: block; /*permet de definir des blocs l'un en dessous des autres pour chaque sous menus */
+	text-align: left; /*permet d'aligner le texte des sous menus à gauche*/
 }
 
 /* Ajoute un arrière plan blanc (avec une opacité de 0.2) lorsque le curseur passe devant les sous menus (=dropdown-content) */
 .dropdown-content a:hover {
-  background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.2);
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
