@@ -24,6 +24,10 @@ mark{
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .gras{
 	font-style: bold;
 }
